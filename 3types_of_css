@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 Ways to apply css</title>
+    <!-- external css is used to describe style of all web pages if it has to be connected via link -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- internal css is weitten in head tag and can be used to describe whole web page -->
+    <style>
+        /* Here, h2 selector will apply style of every h2 in this page */
+        h2{
+            color: aquamarine;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <!-- inline css is written in open tag  of an element and describes style for that element -->
+    <h1 style="color: red;
+    background: cornflowerblue;
+    text-align: center;">Hello World</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima quos a dolorem amet cum non esse. Laboriosam, accusantium. In tempore recusandae quos saepe laboriosam accusamus inventore iure dolorum quibusdam. Sint?</p>
+    <h2>This is Us</h2>
+    <h2>This is also Us</h2>
+</body>
+</html>
