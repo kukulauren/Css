@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day-8</title>
+    <style>
+        /* There is a priority i.e, class and id selectors influcence more than tag selector */
+        h1{
+            color: red;
+        }
+        /* dot is used to select class */
+        /* class is used more than the rest */
+        .name{
+            color: aqua;
+            font-family: Copperplate;
+            font-weight: 100;
+        }
+        /* # is used to select id */
+        #gret{
+            color: #2f6eac;
+            font-variant: small-caps;
+        }
+        .testing{
+            color: #2f6eac;
+            background-color: rgb(255, 219, 219);
+            text-align: center;
+            letter-spacing: 4px;
+            line-height: 40px;
+            text-decoration: underline;
+            text-transform: uppercase;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: lighter;
+            font-size: 50px;
+                }
+        .ptest{
+            background-color: #3656a7;
+            color: rgb(186, 173, 173);
+            text-transform: capitalize;
+            font-family: cursive;
+        }
+        .pj{
+            text-align: justify;
+        }
+        .tr{
+            text-align: right;
+        }
+        .link{
+            text-decoration: none;
+            color: rgb(250, 208, 144);
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <h1 class="name">Almora</h1>
+    <h1 id="gret">How are you?</h1>
+    <h2 class="testing">
+        This is testing
+    </h2>
+    <p class="ptest pj">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, quas ipsa velit blanditiis pariatur dolore voluptas odio reprehenderit fuga facilis explicabo fugit voluptatem provident maiores consequuntur ad obcaecati. Eveniet, recusandae.
+    </p>
+    <p class="ptest tr">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <a href="#" class="link">Google</a>
+</body>
+</html>
