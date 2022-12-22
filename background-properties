@@ -13,6 +13,8 @@
             background-repeat:no-repeat ;
             background-position: top;
             background-size: 300px; 
+            /* There is a value called cover that let us to cover whole web page */
+            /* But contain value need backgroung-attachment:fixed properties to see the photo well */
             background-attachment: fixed; 
             height: 5000px;
         }
