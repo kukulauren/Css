@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-model</title>
+    <style>
+        h1{
+            margin: 10px;
+            /* so,margin only represent all top,right,bottom and left margin of the element */
+            /* padding also behaves the same ways */
+            padding: 5px;
+        }
+        p{
+            margin: 10px 5px;
+            /* here top and bottom margin will be 10px and right and left margin will be 5px */
+            /* padding also behaves the same ways */
+            padding: 8px 5px;
+        }
+        /* or you can choose for each side manually */
+        div{
+            margin: 10px 10px 2px 4px;
+            /* padding also behaves the same ways */
+            padding: 2px 3px 1px 4px;
+        }
+        a{
+            margin: 12px;
+            padding: 20px;
+            border: 1px solid blue;
+            /* This is used for all borer-top/right/bottom and left  */
+            /* If we want to change one manually, we can add a few more under the default border line  */
+            border-left-width: 10px;
+        }
+        .gret{
+            text-align: center;
+            font-size: 18px;
+            border: 2px solid coral;
+            border-bottom-style: groove;
+            margin: 10px;
+            padding: 10px;
+            display: inline-block;
+            border-radius: 10px;
+            width: 300px;
+            /* To get the total width including padding and border as 300px we use boxsizing:border-box  */
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <p>Lorem ipsum</p>
+    <div>This is division</div>
+    <div>
+        <p class="gret">Hello!This is Olaf from Frozen</p>
+    <p class="gret">Merry Christmas!</p>
+    <p class="gret">Oh!Also Happy New year!</p>
+    </div>
+    <button>Click</button>
+    <img src="https://upload.wikimedia.org/wikipedia/en/6/6d/Olaf_from_Disney%27s_Frozen.png" alt="">
+    <a href=""3>Google</a>
+    <span>This is span text</span>
+</body>
+</html>
