@@ -7,6 +7,15 @@
     <title>Background</title>
 </head>
     <style>
+        body{
+            background-color: #497ac3;
+            background-image: url(./poe\ copy.jpeg);
+            background-repeat:no-repeat ;
+            background-position: top;
+            background-size: 300px; 
+            background-attachment: fixed; 
+            height: 5000px;
+        }
         .box{
             border: 1px solid black;
             height: 400px;
@@ -21,6 +30,6 @@
         }
     </style>
 <body>
-    <div class="box"></div>
+    <!-- <div class="box"></div> -->
 </body>
 </html>
