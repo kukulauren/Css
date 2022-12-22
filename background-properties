@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background</title>
+</head>
+    <style>
+        .box{
+            border: 1px solid black;
+            height: 400px;
+            background-color: #497ac3;
+            /* you can use multiple images by using comma */
+            background-image:url(./poe\ copy.jpeg), url(./poe\ copy.jpeg);
+            /* x goes horizontally and y goes vertically while repeat goes both axis and there is also no-repeat */
+            background-repeat: repeat-x, repeat-y;
+            background-size: 100px;
+            /* more values like top, right,bottom,left,top right,bottom right,left bottom and left top */
+            background-position: left top, right;
+        }
+    </style>
+<body>
+    <div class="box"></div>
+</body>
+</html>
