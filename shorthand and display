@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shorthand and display</title>
+    <style>
+        /* shorthand property is started in css3 */
+        /* font:style  variant weight size/weight family */
+        h1{
+            font: italic small-caps bold 50px/20px Arial, Helvetica, sans-serif;
+            /* if i reduce the width of block element the rest of its line will be filled with margin none of any other contect will come beside of block content */
+            width: 400px;
+        }
+        button, img{
+            /* its default width is content width and we can control the width of inline-block element and others elements except block can come beside them */
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- h1 to h6,p and div are block level elements -->
+    <h1>Hello World!</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div>This is division</div>
+    <!--  Elements like button,img,input are inline-block element -->
+    <button>Click</button>
+    <img src="https://upload.wikimedia.org/wikipedia/en/6/6d/Olaf_from_Disney%27s_Frozen.png" alt="">
+    <!-- a and span elements are inline level element. There is no way to control width of them -->
+    <a href=""3>Google</a>
+    <span>This is span text</span>
+</body>
+</html>
