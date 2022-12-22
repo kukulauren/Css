@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bm testing</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .cover{
+            
+        }
+        .cover-img{
+            width: 100%;
+            display: block;
+        }
+        .profile{
+            text-align: left;
+            
+        }
+        .profile-img{
+            margin-left: 10px;
+            margin-top: -100px;
+            border: 3px solid white;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+        .pro{
+            margin-left: 20px;
+            font-family: sans-serif;
+        }
+        .profile-name{
+            font-size: 27px;
+        }
+        .profile-bio{
+            color: rgb(48, 48, 48);
+        }
+    </style>
+</head>
+<body>
+    <div class="cover">
+        <img class="cover-img" src="https://hips.hearstapps.com/esquireuk.cdnds.net/17/43/4000x2000/landscape-1509012695-gettyimages-865270086.jpg?resize=1200:*" alt="">
+    </div>
+    <div class="profile">
+        <img class="profile-img" src="https://compote.slate.com/images/c7921878-610a-4e13-acd4-c49a67aaa5c3.jpeg?crop=2198%2C1465%2Cx1%2Cy0" alt="">
+        <div class="pro">
+            <h3 class="profile-name">Neymar Jr.</h3>
+        <p class="profile-bio">Brazillian footballer</p>
+        </div>
+    </div>
+</body>
+</html>
