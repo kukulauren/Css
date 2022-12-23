@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-class</title>
+    <style>
+        /* I was also testing card */
+        .card{
+            border-radius: 3%;
+            width: 300px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            padding: 10px;
+            text-align: justify;
+            box-sizing: border-box;
+        }
+        /* hover is used to show changes when you put mouse on something */
+        .card:hover{
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+        /* active is used to show changes when you click something */
+        .card:active{
+            background-color: #59ACD2;
+        }
+        /* There are more pseudoclasses but I haven't learnt them yet  */
+        .card-img{
+            width: 280px;
+            border-radius: 3%;            
+        }
+        .card-link{
+            text-decoration: none;
+            color: rgb(31, 95, 144);
+            
+        }
+        .card-link:hover{
+            font-size: large;
+            text-shadow: 2px 2px 1px rgba(35, 107, 163, 0.538);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img class="card-img" src="https://cdn.vox-cdn.com/thumbor/E2SIQGcaVMdvOlCJvdfBDCsY4so=/1400x1050/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/9792467/olafcover.jpg" alt="">
+        <h3>Olaf</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem odit hic ab, natus blanditiis accusantium, quibusdam, laborum dolores excepturi laudantium deserunt laboriosam libero architecto molestiae vel temporibus omnis beatae provident?</p>
+        <a class="card-link" href="#">Learn More</a>
+    </div>
+</body>
+</html>
