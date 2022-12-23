@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essential Prop</title>
+    <style>
+        img{
+            width: 300px;
+            float: right;
+            opacity: 0.1;
+            /* If opacity is 0, the image will take its place. But no to take its place we can used display:none; */
+            
+        }
+        .box-img{
+            visibility: hidden;
+            /* visibility hidden also acts the same way as opacity 0 */
+        }
+        /* Nomatter block element will follow up because of float property, the next content of element will be beside the image */
+        
+        p{
+            clear: both;
+        }
+        /* clear property can only be used for block elements */
+        .box{
+            width: 300px;
+            height: 200px;
+            overflow: scroll;
+            border: 1px solid black;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img class="box-img" src="https://cdn.vox-cdn.com/thumbor/E2SIQGcaVMdvOlCJvdfBDCsY4so=/1400x1050/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/9792467/olafcover.jpg" alt="">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nulla velit culpa nostrum totam nam voluptatibus rerum obcaecati dignissimos voluptatem dolore a voluptate facilis quidem rem, animi quo delectus magni officiis libero suscipit iure porro? Aut porro exercitationem repellat, eum a magnam quidem et debitis. Minus, architecto tempore ipsam fugit repellat inventore magni! Esse laborum officiis maxime corrupti quam cum earum, eaque placeat, vero sequi provident. Animi minima, deleniti non asperiores vero possimus magnam voluptatibus quam dolorum, at aspernatur vitae corrupti enim suscipit iusto hic dolorem inventore explicabo sequi incidunt ut voluptas? Sint, ad pariatur corporis sapiente at minima doloribus?
+        </p>
+    
+
+    </div>
+    <img src="https://cdn.vox-cdn.com/thumbor/E2SIQGcaVMdvOlCJvdfBDCsY4so=/1400x1050/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/9792467/olafcover.jpg" alt="">
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit excepturi veniam totam tenetur vel. Earum veritatis animi exercitationem? Maiores, corrupti. Consectetur officiis expedita accusamus itaque beatae nulla praesentium explicabo magnam corporis, ex cupiditate repellendus eos optio quas aut quod perspiciatis necessitatibus omnis commodi hic! Libero iste voluptatibus perspiciatis consectetur adipisci incidunt cupiditate, architecto repellat quibusdam quod quisquam, ipsam commodi explicabo provident nesciunt beatae obcaecati pariatur. Sequi, adipisci. Incidunt asperiores enim esse facilis quod harum explicabo ab qui saepe, iure blanditiis velit voluptas autem architecto accusantium totam, eaque mollitia doloribus quaerat consequatur maiores pariatur similique libero vitae. Reiciendis omnis animi inventore nisi odit. Possimus nihil, pariatur ducimus natus vel ipsa, rerum quidem accusantium aspernatur facere aliquam, esse deleniti cumque cupiditate labore fuga deserunt nostrum odit? Perferendis beatae ut repellendus accusamus obcaecati itaque excepturi rerum necessitatibus, sunt eligendi assumenda corporis quos, quas sequi! Non quidem quo atque cum ipsum ducimus quam rem placeat! Quidem at iure atque modi corrupti dolorum quod odio error, natus dignissimos, illo asperiores iste. Optio temporibus incidunt, reprehenderit quia doloremque provident aspernatur unde, nesciunt a, perspiciatis culpa iusto voluptates aliquid quibusdam. Vel mollitia suscipit autem corporis magnam eveniet sequi nulla quod officia facilis, harum adipisci quo accusantium quasi.
+    </p>
+</body>
+</html>
