@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <style>
+        :root{
+            --normal-h : 50px;
+            --normal-fs : 13px; 
+        }
+        .mb{
+            margin-bottom: 10px;
+        }
+        body{
+            background-color: #dda15e;
+        }
+        .btn{
+            height: var(--normal-h);
+            padding: 0 30px;
+            text-transform: uppercase;
+            font-size: var(--normal-fs);
+            font-family: 'Montserrat Alternates', sans-serif;
+            display: inline-block;
+            text-decoration: none;
+            color: black;
+            box-sizing: border-box;
+            line-height: 50px;
+        }
+        .btn:hover{
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        .btn-outline:hover{
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        .btn-outline{
+            height: var(--normal-h);
+            padding: 0 30px;
+            text-transform: uppercase;
+            font-size: var(--normal-fs);
+            font-family: 'Montserrat Alternates', sans-serif;
+            display: inline-block;
+            text-decoration: none;
+            box-sizing: border-box;
+            line-height: 50px;
+            background-color: transparent;
+        }
+        .btn-outline-light{
+            color: #ffffff;
+            border: 1px solid #ffffff;
+        }
+        .btn-outline-dark{
+            color: #000000 ;
+            border: 1px solid #000000 ;
+        }
+        .btn-outline-primary{
+            color: #a2d2ff;
+            border: 1px solid #a2d2ff;
+        }
+        .btn-outline-secondary{
+            color: #2a9d8f;
+            border: 1px solid #2a9d8f;
+        }
+        .btn-outline-accent{
+            color: #457b9d;
+            border: 1px solid #457b9d;
+        }
+        .btn-light{
+            background-color: #ffffff;
+            border:1px solid white;
+        }
+        .btn-dark{
+            background-color: #000000;
+            border:1px solid #000000;
+            color: white;
+        }
+        .btn-primary{
+            background-color: #a2d2ff;
+            border:1px solid #a2d2ff ;
+        }
+        .btn-secondary{
+            background-color: #2a9d8f;
+            border:1px solid #2a9d8f;
+        }
+        .btn-accent{
+            background-color: #457b9d;
+            border:1px solid #457b9d;
+        }
+        .rounded{
+            border-radius: 5px;
+        }
+        .rounded-pill{
+            border-radius: 50%;
+        }
+        .btn-icon{
+            width: 50px;
+            padding: 0;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- button design -->
+    <h3>These are solid buttons with background colors</h3>
+    <div class="mb">
+        <button class="btn btn-light rounded "> <i class="fa-solid fa-computer-mouse"></i>Click Me</button>
+    <a class="btn btn-light rounded-pill" href="#"><i class="fa-brands fa-google"></i> Google</a>
+    </div>
+    <div class="mb">
+    <button class="btn btn-dark rounded">Click Me</button>
+    <a class=" btn btn-primary rounded" href="#">Google</a>
+    </div>
+    <div class="mb">
+        <button class="btn btn-secondary rounded">Click Me</button>
+    <a class=" btn btn-accent rounded" href="#">Google</a>
+    </div>
+    <hr>
+    <h3>
+        There buttons are outline buttons which don't have background-color.
+    </h3>
+    <div class="mb">
+        <button class="btn-outline btn-outline-light rounded">Click Me</button>
+    <a class="btn-outline btn-outline-light rounded-pill" href="#">Google</a>
+    </div>
+    <div class="mb">
+    <button class="btn-outline btn-outline-dark rounded">Click Me</button>
+    <a class=" btn-outline btn-outline-primary rounded" href="#">Google</a>;
+    </div>
+    <div class="mb">
+        <button class="btn-outline btn-outline-secondary rounded">Click Me</button>
+    <a class=" btn-outline btn-outline-accent rounded" href="#">Google</a>
+    </div>
+    <button class="btn btn-accent btn-icon rounded-pill"><i class="fa-solid fa-computer-mouse"></i></button>
+</body>
+</html>
