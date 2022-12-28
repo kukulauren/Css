@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>List with links</title>
+    <style>
+        h3{
+            width: fit-content;
+            margin: 20px auto;
+        }
+        /* * is called universal selector */
+        :root{
+            --normal-border:1px solid black;
+        }
+        *{
+            font-family: 'Roboto', sans-serif;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .list{
+            list-style-type: none;
+            /* background-color: #fefae0; */
+            border: var(--normal-border);
+            width: 200px;
+            margin: 30px auto;
+            box-shadow: 0 0 20px rgb(143, 141, 141);
+            border-radius: 5px;
+        }
+
+        .list-items{
+            border-bottom:1px solid black ;
+            width: 100%;
+            padding: 10px;
+            
+        }
+        .list-items:last-child{
+            border-bottom: 0;
+            margin-bottom: 0;
+        }
+        .list-items p{
+            font-weight: bold;
+            display: inline-block;
+        }
+        .list-items .position{
+            color:grey;
+            font-size: 13px;
+        }
+        .img{
+            width: 25px;
+            height: 25px;
+            vertical-align: top;
+            border-radius: 50%;
+            border: 1px solid rgb(115, 142, 160);
+            margin-right: 5px;
+        }
+        .nav{
+            /* border: 1px solid black; */
+            list-style-type:none;
+            background-color: black;
+        }
+        .nav-items{
+            /* border: 1px solid black; */
+            display: inline-block;
+            
+            
+        }
+        .nav-link{
+            text-decoration: none;
+            color: #ffff;
+            display: inline-block;
+            padding: 10px;
+            margin: 0;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .nav-link:hover{
+            border: 1px solid white;
+            color: black;
+            background-color: white;
+        }
+        .nav-link:active{
+            background-color: rgb(48, 142, 29);
+            color: white;
+        }
+        .nav.active:hover{
+            background-color: rgb(48, 142, 29);
+        }
+    </style>
+</head>
+<body>
+    <h3>
+        My team
+    </h3>
+    <ul class="list">
+        <li class="list-items">
+            <img class="img" src="./poe copy.jpeg" alt="">
+            <p>Lauren <br>
+            <span class="position">Frontend developer</span>
+            </p>
+        </li>
+        <li class="list-items">
+            <img class="img" src="./poe copy.jpeg" alt="">
+            <p>Maloa <br>
+            <span class="position">Web designer</span>
+            </p>
+        </li>
+        <li class="list-items">
+            <img class="img" src="./poe copy.jpeg" alt="">
+            <p> Buaol <br>
+            <span class="position">Graphic designer</span>
+            </p>
+        </li>
+        <li class="list-items">
+            <img class="img" src="./poe copy.jpeg" alt="">
+            <p>Gralian <br>
+            <span class="position">Back-end developer</span>
+            </p>
+        </li>
+        </ul>
+        <ul class="nav">
+            <li class="nav-items">
+                <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-items">
+                <a href="#" class="nav-link">About</a>
+            </li>
+            <li class="nav-items">
+                <a href="#" class="nav-link">Service</a>
+            </li>
+            <li class="nav-items">
+                <a href="#" class="nav-link">Profile</a>
+            </li>
+            <li class="nav-items">
+                <a href="#" class="nav-link">Contact us</a>
+            </li>
+        </ul>
+</body>
+</html>
