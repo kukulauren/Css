@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>My page</title>
+    <style>
+        :root{
+            --normal-border: 2px solid black;
+        }
+        *{
+            margin: 0;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        header{
+            border-bottom: var(--normal-border);
+            /* padding: 10px; */
+            margin: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 30px;
+            justify-content: space-between;
+        }
+        .brand-link{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        nav{
+            /* padding: 10px; */
+            display: flex;
+            /* flex-grow: 1; */
+            justify-content: flex-end;
+            gap: 10px;
+            align-items: center;
+        }
+        .nav-link{
+            /* border: var(--normal-border); */
+            width: 100px;
+            text-decoration: none;
+            color: black;
+            text-align: center;      
+            font-size: 15px;      
+            padding: 5px 0;
+        }
+        
+        .nav-togler{
+            border: 2px solid black;
+            padding: 4px 7px;
+            border-radius: 5px;
+            font-size: 15px;
+            background-color: white;
+            align-self: stretch;
+            display: none;
+        }
+        @media screen and (max-width:780px) {
+            nav{
+                display: none;
+            }
+            .nav-togler{
+                display: block;
+            }
+            nav.open{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                align-items: stretch;
+                
+            }
+            .nav-link{
+                width: auto;
+            }
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .form{
+            border: var(--normal-border);
+            border-radius: 5px;
+            width: 400px;
+            padding: 20px;
+            /* margin: 100px auto; */
+        }
+        .group{
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+        }
+
+        .name-label{
+            font-family: Copperplate;
+            margin-bottom: 5px;
+        }
+
+        .form-name{
+            margin-bottom: 5px;
+            padding: 8px;
+        }
+        .form-name:focus-visible{
+            outline: none;
+        }
+        .nav-link:hover{
+            color: white;
+            background-color: #000000;
+        }
+        .btn{
+            background-color: #000;
+            color: white;
+            padding: 10px;
+            border: none;
+        }
+        .row{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding:5px 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <header>
+        <a href="#" class="brand-link">Days with Lauren</a>
+        <button class="nav-togler">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav>
+            <a href="#" class="nav-link">Home</a>
+            <a href="#" class="nav-link">About</a>
+            <a href="#" class="nav-link">Service</a>
+            <a href="#" class="nav-link">Profile</a>
+            <a href="#" class="nav-link">Contact</a>
+        </nav>
+    </header> -->
+    <section>
+        <form action="" class="form">
+            <div class="group">
+                <label for="name" class="name-label">Your Name</label>
+                <input type="text" id="name" name="name" class="form-name" placeholder="e.g.Lauren">
+            </div>
+            <div class="group">
+                <label for="email" class="name-label">Email Address</label>
+                <input type="email" id="email" name="email" class="form-name" placeholder="e.g.user@gmail.com">
+            </div>
+            <div class="group">
+                <label for="password" class="name-label">Password</label>
+                <input type="password" id="password" name="password" class="form-name">
+            </div>
+            <div class="group">
+                <label for="Password_confirmation" class="name-label">Confirm Password</label>
+                <input type="Password" id="Password_confirmation" class="form-name">
+            </div>
+            <div class="group">
+                <label for="address" class="name-label">Your address</label>
+                <textarea name="address" id="address" class="form-name" cols="30" rows="10"></textarea>
+            </div>
+            <div class="row">
+                <input type="checkbox" name="confirm" value="confirm" id="confirm">
+                <label for="confirm">Confirm that you understand cookies</label>
+                <button class="btn">Submit</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
